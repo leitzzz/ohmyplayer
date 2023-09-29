@@ -90,9 +90,9 @@ class LivePlayerProvider extends ChangeNotifier {
       await playVideo(playingUrl);
     }
 
-    // check if its buffering
-
-    if (isBuffering != player.isBuffering) {
+    // check if its buffering and show the buffering indicator
+    if (isBuffering != player.isBuffering &&
+        playingState == FijkState.started) {
       if (player.isBuffering == true) {
         isBuffering = true;
 
