@@ -103,11 +103,6 @@ class LivePlayerProvider extends ChangeNotifier {
         notifyListeners();
       }
     }
-
-    // useful on streams for fix the buffering issue, that the live videos gets so slow
-    // if (player.bufferPercent > 1000) {
-    //   await playVideo(playingUrl);
-    // }
   }
 
   // check the stream state every X seconds
