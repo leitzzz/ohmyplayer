@@ -41,3 +41,5 @@ The variable: baseUrl, for example:
 static const String baseUrl = 'https://mylovelydomain/channels.json';
 
 ````
+
+You can play almost any streaming video resource: mpegts, avi, ts.
